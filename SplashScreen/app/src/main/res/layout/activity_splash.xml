@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_logo"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="CoolEbiz"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="44dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_main"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/tagline"
+            android:textAlignment="center"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColor"
+            android:textSize="14dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</RelativeLayout>
